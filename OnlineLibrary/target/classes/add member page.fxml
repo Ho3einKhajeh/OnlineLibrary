@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onlinelibrary.memberController">
+   <children>
+      <Label layoutX="208.0" layoutY="14.0" prefHeight="90.0" prefWidth="194.0" style="-fx-alignment: center;" text="مشخصات کاربری:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_AddMemberTell" layoutX="115.0" layoutY="379.0" />
+      <Label layoutX="386.0" layoutY="383.0" text="شماره تلفن:" />
+      <TextField fx:id="txt_AddMemberUsername" layoutX="115.0" layoutY="292.0" />
+      <TextField fx:id="txt_AddMemberName" layoutX="115.0" layoutY="204.0" />
+      <TextField fx:id="txt_AddMemberFamily" layoutX="115.0" layoutY="248.0" />
+      <TextField fx:id="txt_AddMemberPassword" layoutX="115.0" layoutY="332.0" />
+      <Label layoutX="384.0" layoutY="261.0" text="نام خانوادگی:" />
+      <Label layoutX="402.0" layoutY="437.0" text="ایمیل:" />
+      <Label layoutX="408.0" layoutY="208.0" text="نام:" />
+      <Label layoutX="390.0" layoutY="300.0" text="نام کاربری:" />
+      <Button fx:id="btn_AddMember" layoutX="287.0" layoutY="466.0" mnemonicParsing="false" onAction="#createMember" text="ثبت" />
+      <Button fx:id="btn_Exit" layoutX="39.0" layoutY="542.0" mnemonicParsing="false" onAction="#GoToHomePage" text="بازگشت به صفحه ورود" />
+      <TextField fx:id="txt_showMessage" layoutX="230.0" layoutY="505.0" />
+      <TextField fx:id="txt_AddMemberEmail" layoutX="115.0" layoutY="424.0" />
+      <Label layoutX="394.0" layoutY="336.0" text="رمز عبور:" />
+   </children>
+</AnchorPane>

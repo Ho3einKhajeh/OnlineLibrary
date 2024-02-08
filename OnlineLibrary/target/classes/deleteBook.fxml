@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onlinelibrary.bookController">
+   <children>
+      <TableView fx:id="tbl_books" layoutX="196.0" layoutY="146.0" onMouseClicked="#getData" prefHeight="307.0" prefWidth="408.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="colSubject" prefWidth="75.0" text="subject" />
+            <TableColumn fx:id="colTitle" prefWidth="75.0" text="title" />
+            <TableColumn fx:id="colAuthor" prefWidth="75.0" text="author" />
+            <TableColumn fx:id="colIs" prefWidth="75.0" text="IsAvailable" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_deleteBook" layoutX="379.0" layoutY="478.0" mnemonicParsing="false" onAction="#deleteBook" text="حذف" />
+      <Label layoutX="560.0" layoutY="14.0" prefHeight="83.0" prefWidth="225.0" style="-fx-alignment: center;" text="حذف کتاب:">
+         <font>
+            <Font name="System Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <Button layoutX="734.0" layoutY="560.0" mnemonicParsing="false" text="بازگشت" />
+      <Label layoutX="291.0" layoutY="111.0" text="کتاب مورد نظر را انتخاب کنید:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

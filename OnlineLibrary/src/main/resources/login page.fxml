@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onlinelibrary.LoginController">
+   <children>
+      <Label layoutX="287.0" layoutY="109.0" prefHeight="128.0" prefWidth="240.0" style="-fx-alignment: center;" text="welcome">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_username" layoutX="325.0" layoutY="287.0" />
+      <TextField fx:id="txt_password" layoutX="325.0" layoutY="355.0" />
+      <Label layoutX="240.0" layoutY="289.0" text="username:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="357.0" text="password:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button id="EnterB" fx:id="enterButton" layoutX="368.0" layoutY="422.0" mnemonicParsing="false" onAction="#Login" text="ورود" />
+      <Button layoutX="325.0" layoutY="463.0" mnemonicParsing="false" text="ایجاد حساب کاربری" />
+   </children>
+</AnchorPane>

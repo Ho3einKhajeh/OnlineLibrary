@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #c9f29b;" styleClass="form_container" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onlinelibrary.memberController">
+   <children>
+      <Label layoutX="187.0" layoutY="14.0" prefHeight="90.0" prefWidth="234.0" style="-fx-alignment: center;" styleClass="title" text="Users Informations:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_AddMemberTell" layoutX="238.0" layoutY="363.0" />
+      <Label layoutX="98.0" layoutY="366.0" styleClass="title" text="Tell:" />
+      <TextField fx:id="txt_AddMemberUsername" layoutX="238.0" layoutY="265.0" />
+      <TextField fx:id="txt_AddMemberName" layoutX="238.0" layoutY="151.0" />
+      <TextField fx:id="txt_AddMemberFamily" layoutX="238.0" layoutY="206.0" />
+      <TextField fx:id="txt_AddMemberPassword" layoutX="238.0" layoutY="319.0" />
+      <Label layoutX="81.0" layoutY="209.0" styleClass="title" text="Family:" />
+      <Label layoutX="93.0" layoutY="410.0" styleClass="title" text="Email:" />
+      <Label layoutX="91.0" layoutY="154.0" styleClass="title" text="Name:" />
+      <Label layoutX="65.0" layoutY="268.0" styleClass="title" text="Username:" />
+      <Button fx:id="btn_AddMember" layoutX="287.0" layoutY="466.0" mnemonicParsing="false" onAction="#createMember" prefHeight="26.0" prefWidth="91.0" stylesheets="@../css/style.css" text="submit" />
+      <Button fx:id="btn_Exit" layoutX="39.0" layoutY="542.0" mnemonicParsing="false" onAction="#Exit" prefHeight="43.0" prefWidth="156.0" styleClass="form_container" text="Return to login page" />
+      <TextField fx:id="txt_showMessage" layoutX="230.0" layoutY="505.0" />
+      <TextField fx:id="txt_AddMemberEmail" layoutX="238.0" layoutY="407.0" />
+      <Label layoutX="68.0" layoutY="322.0" styleClass="title" text="Password:" />
+   </children>
+</AnchorPane>

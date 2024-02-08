@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #c9f29b;" styleClass="form_container" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onlinelibrary.memberController">
+   <children>
+      <Label layoutX="265.0" layoutY="39.0" prefHeight="73.0" prefWidth="269.0" style="-fx-alignment: center;" styleClass="title" text="Member page">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_myBooks" layoutX="314.0" layoutY="200.0" mnemonicParsing="false" onAction="#GoToMyBook" prefHeight="100.0" prefWidth="171.0" style="-fx-background-radius: 30px;" text="My books" />
+      <Button fx:id="btn_rentBook" layoutX="314.0" layoutY="318.0" mnemonicParsing="false" onAction="#GoToRentBook" prefHeight="100.0" prefWidth="171.0" style="-fx-background-radius: 30px;" text="Lend a book" />
+      <Button fx:id="btn_Exit" layoutX="716.0" layoutY="550.0" mnemonicParsing="false" onAction="#Exit" text="Exit" />
+   </children>
+</AnchorPane>

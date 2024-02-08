@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #c9f29b;" styleClass="form_container" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onlinelibrary.bookController">
+   <children>
+      <Label layoutX="430.0" layoutY="129.0" styleClass="title" text="Title:" />
+      <TextField fx:id="txt_AddBookTitle" layoutX="512.0" layoutY="134.0" styleClass="form_container" stylesheets="@../css/style.css" />
+      <Button fx:id="btn_addBook" layoutX="556.0" layoutY="329.0" mnemonicParsing="false" onAction="#createBook" prefHeight="26.0" prefWidth="94.0" styleClass="form_container" text="Submit" />
+      <Button fx:id="btn_returnAddBook" layoutX="692.0" layoutY="560.0" mnemonicParsing="false" onAction="#ReturnAdminPage" prefHeight="26.0" prefWidth="94.0" text="Return" />
+      <TextField fx:id="txt_AddBookSubject" layoutX="512.0" layoutY="205.0" styleClass="form_container" />
+      <TextField fx:id="txt_AddBookAuthor" layoutX="512.0" layoutY="267.0" styleClass="form_container" />
+      <Label layoutX="266.0" layoutY="-18.0" prefHeight="99.0" prefWidth="267.0" style="-fx-alignment: center;" styleClass="title" text="Books mangment">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="404.0" layoutY="200.0" styleClass="title" text="Subject:" />
+      <Label layoutX="415.0" layoutY="262.0" styleClass="title" text="Author:" />
+      <TableView fx:id="tbl_books" layoutX="14.0" layoutY="117.0" onMouseClicked="#getData" prefHeight="336.0" prefWidth="389.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="colSubject" prefWidth="75.0" text="subject" />
+            <TableColumn fx:id="colTitle" prefWidth="75.0" text="title" />
+            <TableColumn fx:id="colAuthor" prefWidth="75.0" text="author" />
+            <TableColumn fx:id="colIs" prefWidth="75.0" text="IsReservd" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_deleteBook" layoutX="153.0" layoutY="463.0" mnemonicParsing="false" onAction="#deleteBook" prefHeight="26.0" prefWidth="88.0" text="Delete" />
+      <TextField fx:id="txt_showMessage" layoutX="487.0" layoutY="384.0" styleClass="form_container" />
+   </children>
+</AnchorPane>

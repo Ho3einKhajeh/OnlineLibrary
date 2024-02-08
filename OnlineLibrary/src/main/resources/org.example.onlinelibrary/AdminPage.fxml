@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #c9f29b;" styleClass="form_container" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onlinelibrary.LoginController">
+   <children>
+      <Label layoutX="275.0" layoutY="14.0" prefHeight="64.0" prefWidth="250.0" style="-fx-alignment: center;" styleClass="title" text="Admin page">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_Exit" layoutX="678.0" layoutY="550.0" mnemonicParsing="false" onAction="#Exit" text="Exit" />
+      <Button fx:id="btn_modiriatBook" layoutX="296.0" layoutY="224.0" mnemonicParsing="false" onAction="#GoTOAddBook" prefHeight="75.0" prefWidth="249.0" style="-fx-background-radius: 30px;" text="Books management" />
+      <Button fx:id="btn_deleteMember" layoutX="296.0" layoutY="323.0" mnemonicParsing="false" onAction="#GoTODeleteMember" prefHeight="75.0" prefWidth="250.0" style="-fx-background-radius: 30px;" text="Members management" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #c9f29b;" styleClass="form_container" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onlinelibrary.memberController">
+   <children>
+      <Label layoutX="197.0" layoutY="99.0" prefHeight="35.0" prefWidth="435.0" styleClass="title" text="Select an spcific member to delete">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbl_Member" layoutX="143.0" layoutY="135.0" onMouseClicked="#getData" prefHeight="330.0" prefWidth="555.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="colName" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="colFamily" prefWidth="75.0" text="family" />
+            <TableColumn fx:id="colTell" prefWidth="75.0" text="tell" />
+            <TableColumn fx:id="colEmail" prefWidth="75.0" text="email" />
+            <TableColumn fx:id="colUsername" prefWidth="75.0" text="username" />
+            <TableColumn fx:id="colPassword" prefWidth="75.0" text="password" />
+        </columns>
+      </TableView>
+      <Label layoutX="250.0" layoutY="-6.0" prefHeight="90.0" prefWidth="300.0" style="-fx-alignment: center;" styleClass="title" text="Member management">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_retutnDeleteMember" layoutX="698.0" layoutY="550.0" mnemonicParsing="false" onAction="#ReturnAdminPage" text="Return" />
+      <Button fx:id="btn_deletMember" layoutX="379.0" layoutY="494.0" mnemonicParsing="false" onAction="#deleteMember" text="Delete" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #c9f29b;" styleClass="form_container" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onlinelibrary.bookController">
+   <children>
+      <TableView fx:id="tbl_books" layoutX="152.0" layoutY="147.0" prefHeight="330.0" prefWidth="514.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="colTitle" prefWidth="75.0" text="title" />
+            <TableColumn fx:id="colSubject" prefWidth="75.0" text="Subject" />
+            <TableColumn fx:id="colAuthor" prefWidth="75.0" text="Author" />
+            <TableColumn fx:id="colIs" prefWidth="75.0" text="IsReservd" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_SrchBookTitle" layoutX="284.0" layoutY="100.0" onKeyPressed="#searchBook" prefHeight="29.0" prefWidth="137.0" />
+      <Label layoutX="152.0" layoutY="100.0" prefHeight="35.0" prefWidth="121.0" styleClass="title" text="Searching:" />
+      <Button fx:id="txt_reserv" layoutX="356.0" layoutY="488.0" mnemonicParsing="false" onAction="#reserveBook" text="Lend the book" />
+      <Button fx:id="btn_return1" layoutX="646.0" layoutY="550.0" mnemonicParsing="false" onAction="#return1" text="Return" />
+      <Label layoutX="47.0" layoutY="14.0" prefHeight="80.0" prefWidth="732.0" style="-fx-alignment: center;" styleClass="title" text="Lending books">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

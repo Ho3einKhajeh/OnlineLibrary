@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onlinelibrary.memberController">
+   <children>
+      <Label layoutX="343.0" layoutY="57.0" prefHeight="70.0" prefWidth="150.0" style="-fx-alignment: center;" text="خوش آمدید">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="314.0" layoutY="200.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="171.0" style="-fx-background-radius: 30px;" text="کتاب های من" />
+      <Button layoutX="314.0" layoutY="318.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="171.0" style="-fx-background-radius: 30px;" text="اجاره کردن کتاب" />
+      <Button fx:id="btn_Exit" layoutX="744.0" layoutY="560.0" mnemonicParsing="false"  text="خروج" />
+   </children>
+</AnchorPane>
